@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - Max Sanderlin</title>
+
+    <!-- Security Headers -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; frame-ancestors 'none'; form-action 'self'; base-uri 'self';">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+    <!-- Prevent search engines from caching sensitive info -->
+    <meta name="robots" content="noarchive">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -40,14 +49,11 @@
             <div class="social-links">
                 <h2>Connect With Me</h2>
                 <div class="social-buttons">
-                    <a href="https://www.linkedin.com/in/maxsanderlin/" target="_blank" class="social-btn">
+                    <a href="https://www.linkedin.com/in/maxsanderlin/" target="_blank" rel="noopener noreferrer" class="social-btn">
                         <span>LinkedIn</span>
                     </a>
-                    <a href="https://github.com/maxbox360" target="_blank" class="social-btn">
+                    <a href="https://github.com/maxbox360" target="_blank" rel="noopener noreferrer" class="social-btn">
                         <span>GitHub</span>
-                    </a>
-                    <a href="mailto:your-email@example.com" class="social-btn">
-                        <span>Email</span>
                     </a>
                 </div>
             </div>

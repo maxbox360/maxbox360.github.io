@@ -1,0 +1,7 @@
+# Security Policy for maxsanderlin.com
+# This is a static site with no user input or backend.
+
+Contact: https://www.linkedin.com/in/maxsanderlin/
+Preferred-Languages: en
+Canonical: https://www.maxsanderlin.com/.well-known/security.txt
+
