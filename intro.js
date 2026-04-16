@@ -106,7 +106,7 @@
 
     // Animation state
     let scrollY = 0;
-    let currentTextIndex = 0;
+    let currentTextIndex = -1;
     let textTimer = 0;
     let phase = 'wait'; // 'wait', 'scroll', 'reveal', 'done'
     let stars = [];
