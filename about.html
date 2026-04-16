@@ -1,69 +1,137 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About - Max Sanderlin</title>
 
     <!-- Security Headers -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; frame-ancestors 'none'; form-action 'self'; base-uri 'self';">
-    <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; frame-ancestors 'none'; form-action 'self'; base-uri 'self';"
+    />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
 
     <!-- Prevent search engines from caching sensitive info -->
-    <meta name="robots" content="noarchive">
+    <meta name="robots" content="noarchive" />
 
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <nav class="navbar">
-        <div class="container">
-            <div class="logo">Max Sanderlin</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="about.html" class="active">About</a></li>
-            </ul>
-        </div>
+      <div class="container">
+        <div class="logo">Max Sanderlin</div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+        </ul>
+      </div>
     </nav>
 
     <section class="content">
-        <div class="container">
-            <h1>About Me</h1>
+      <div class="container">
+        <h1>About Me</h1>
 
-            <div class="about-text">
-                <p>
-                    I'm a backend-focused software developer who enjoys building robust systems, APIs, and internal tooling.
-                    My day-to-day work revolves around Python, Django, and PostgreSQL, with Docker and Linux keeping everything running smoothly.
-                </p>
-                <p>
-                    While my strength is on the backend, I'm comfortable working across the stack when needed —
-                    I've built frontend interfaces with React and Next.js to complement the services I create.
-                </p>
-                <p>
-                    I'm always interested in connecting with other developers and tech enthusiasts. Feel free to reach out!
-                </p>
-            </div>
-
-            <div class="social-links">
-                <h2>Connect With Me</h2>
-                <div class="social-buttons">
-                    <a href="https://www.linkedin.com/in/maxsanderlin/" target="_blank" rel="noopener noreferrer" class="social-btn">
-                        <span>LinkedIn</span>
-                    </a>
-                    <a href="https://github.com/maxbox360" target="_blank" rel="noopener noreferrer" class="social-btn">
-                        <span>GitHub</span>
-                    </a>
-                </div>
-            </div>
+        <div class="about-text">
+          <p>
+            I'm a backend-focused software developer who enjoys building robust
+            systems, APIs, and internal tooling. My day-to-day work revolves
+            around Python, Django, and PostgreSQL, with Docker and Linux keeping
+            everything running smoothly.
+          </p>
+          <p>
+            While my strength is on the backend, I'm comfortable working across
+            the stack when needed — I've built frontend interfaces with React
+            and Next.js to complement the services I create.
+          </p>
+          <p>
+            I'm always interested in connecting with other developers and tech
+            enthusiasts. Feel free to reach out!
+          </p>
         </div>
+
+        <div class="social-links">
+          <h2>Connect With Me</h2>
+          <div class="social-buttons">
+            <a
+              href="https://www.linkedin.com/in/maxsanderlin/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-btn"
+            >
+              <span>LinkedIn</span>
+            </a>
+            <a
+              href="https://github.com/maxbox360"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-btn"
+            >
+              <span>GitHub</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="interests-section">
+          <h2>Interests</h2>
+          <div class="interests-grid">
+            <div class="interest-item">
+              <h4>🏀 Sports</h4>
+              <p>
+                Die-hard Razorbacks fan. Love football and basketball — played
+                varsity basketball at Bentonville High School. Built an
+                <a
+                  href="https://github.com/maxbox360/nba_scoring_bot"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >NBA Scoring Bot</a
+                >
+                to track current players moving up the all-time scoring list.
+              </p>
+            </div>
+            <div class="interest-item">
+              <h4>🎮 Gaming</h4>
+              <p>
+                Lifelong gamer. Big Nintendo nerd and Fallout fan. Currently
+                developing
+                <a
+                  href="https://github.com/maxbox360/gamerhive"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Gamerhive</a
+                >, a platform for gamers to connect and share.
+              </p>
+            </div>
+            <div class="interest-item">
+              <h4>🎸 Music</h4>
+              <p>
+                Currently learning guitar. Big fan of trivia nights and karaoke.
+              </p>
+            </div>
+            <div class="interest-item">
+              <h4>🎬 Movies</h4>
+              <p>
+                Film enthusiast. Check out my
+                <a
+                  href="https://letterboxd.com/maxbox360"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Letterboxd</a
+                >
+                for reviews and favorites.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Max Sanderlin. All rights reserved.</p>
-        </div>
+      <div class="container">
+        <p>&copy; 2026 Max Sanderlin. All rights reserved.</p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
-
