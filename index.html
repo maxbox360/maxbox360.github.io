@@ -8,7 +8,7 @@
     <!-- Security Headers -->
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; frame-ancestors 'none'; form-action 'self'; base-uri 'self';"
+      content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https:; frame-ancestors 'none'; form-action 'self'; base-uri 'self';"
     />
     <meta http-equiv="X-Content-Type-Options" content="nosniff" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
@@ -17,6 +17,7 @@
     <meta name="robots" content="noarchive" />
 
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="intro.css" />
   </head>
   <body>
     <nav class="navbar">
@@ -26,6 +27,7 @@
           <li><a href="index.html" class="active">Home</a></li>
           <li><a href="resume.html">Resume</a></li>
           <li><a href="about.html">About</a></li>
+          <li><button id="replay-intro" onclick="replayIntro()">🎮 Replay Intro</button></li>
         </ul>
       </div>
     </nav>
@@ -67,5 +69,7 @@
         <p>&copy; 2026 Max Sanderlin. All rights reserved.</p>
       </div>
     </footer>
+
+    <script src="intro.js"></script>
   </body>
 </html>
