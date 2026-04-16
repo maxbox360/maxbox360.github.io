@@ -211,11 +211,46 @@ body {
     margin-bottom: 0.5rem;
 }
 
+/* Education with Logo */
+.education-item {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.education-logo {
+    width: 80px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Work Experience with Logo */
+.work-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.work-logo {
+    width: 60px;
+    height: auto;
+    object-fit: contain;
+    margin-top: 0.25rem;
+}
+
 /* Skills Grid */
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.resume-section h4 {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
 }
 
 .skill-tag {
