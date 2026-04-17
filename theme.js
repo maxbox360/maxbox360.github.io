@@ -2,22 +2,31 @@
 (function() {
   const THEME_KEY = 'theme';
 
+  function normalizeTheme(theme) {
+    return theme === 'light' ? 'light' : 'dark';
+  }
+
   function getPreferredTheme() {
     const saved = localStorage.getItem(THEME_KEY);
-    if (saved) return saved;
+    if (saved) return normalizeTheme(saved);
 
     // Default to dark mode
     return 'dark';
   }
 
-  function setTheme(theme) {
+  function applyTheme(theme) {
     if (theme === 'light') {
       document.documentElement.setAttribute('data-theme', 'light');
     } else {
       document.documentElement.removeAttribute('data-theme');
     }
-    localStorage.setItem(THEME_KEY, theme);
-    updateToggleButton(theme);
+  }
+
+  function setTheme(theme) {
+    const normalizedTheme = normalizeTheme(theme);
+    applyTheme(normalizedTheme);
+    localStorage.setItem(THEME_KEY, normalizedTheme);
+    updateToggleButton(normalizedTheme);
   }
 
   function updateToggleButton(theme) {
@@ -38,7 +47,8 @@
   // Initialize theme on page load
   document.addEventListener('DOMContentLoaded', function() {
     const theme = getPreferredTheme();
-    setTheme(theme);
+    applyTheme(theme);
+    updateToggleButton(theme);
 
     // Add click handler to toggle button
     const btn = document.querySelector('.theme-toggle');
@@ -48,6 +58,5 @@
   });
 
   // Also set theme immediately to prevent flash
-  setTheme(getPreferredTheme());
+  applyTheme(getPreferredTheme());
 })();
-
