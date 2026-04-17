@@ -542,17 +542,11 @@
       cancelAnimationFrame(animationFrame);
       markIntroShown();
 
-      // Fade out audio
-      const fadeAudio = setInterval(() => {
-        if (openingAudio.volume > 0.1) openingAudio.volume -= 0.1;
-        if (titleAudio.volume > 0.1) titleAudio.volume -= 0.1;
-
-        if (openingAudio.volume <= 0.1 && titleAudio.volume <= 0.1) {
-          openingAudio.pause();
-          titleAudio.pause();
-          clearInterval(fadeAudio);
-        }
-      }, 100);
+      // Stop audio immediately
+      openingAudio.pause();
+      openingAudio.currentTime = 0;
+      titleAudio.pause();
+      titleAudio.currentTime = 0;
 
       overlay.style.transition = 'opacity 1s ease-out';
       overlay.style.opacity = '0';
