@@ -25,6 +25,7 @@
     if (btn) {
       btn.textContent = theme === 'light' ? '🌙' : '☀️';
       btn.title = theme === 'light' ? 'Switch to dark mode' : 'Switch to light mode';
+      btn.setAttribute('aria-pressed', theme === 'light' ? 'true' : 'false');
     }
   }
 
